@@ -28,7 +28,7 @@ public class Soal1 {
         if (umur>=18 && umur<=24) {
             if (tt.equalsIgnoreCase("California")|| tt.equalsIgnoreCase("Detroit") || tt.equalsIgnoreCase("Boston")
                 && ut < 1000) {
-                String pangkat="Don";
+                String pangkat="Capo";
                 System.out.println(nama+" kemungkinan adalah seorang anggota mafia dengan pangkat "+pangkat);
             } else {
                 System.out.println(nama+" tidak mencurigakan"); 
@@ -46,7 +46,7 @@ public class Soal1 {
         else if (umur>40){
             if (tt.equalsIgnoreCase("Nevada")|| tt.equalsIgnoreCase("New York")|| tt.equalsIgnoreCase("Havana")
                 && ut > 10000) {
-                String pangkat="Capo";
+                String pangkat="Don";
                 System.out.println(nama+" kemungkinan adalah seorang anggota mafia dengan pangkat "+pangkat);
             } else {
                 System.out.println(nama+" tidak mencurigakan"); 
