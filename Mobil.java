@@ -32,21 +32,21 @@ public void tambahKecepatan(int kecepatan){
    
 public void kurangKecepatan(int kecepatan){
     if (kecepatan == 0){
-        System.out.println("Mobil sedang berhenti");
+        status = "Mobil sedang berhenti";
     }else if(kecepatan > 1 && kecepatan >=50 ){
-        System.out.println("Mobil sedang lambat");
+        status = "Mobil sedang lambat";
     }else if(kecepatan >51 && kecepatan <=70){
-        System.out.println("Mobil sedang sedang");
+        status = "Mobil sedang sedang";
     }else {
-        System.out.println("Mobil sedang cepat");
+        status = "Mobil sedang cepat";
     }
 }
 public int getKecepatan(){
     return kecepatan;
 }
 void infoKecepatan(){
-    System.out.println("Merk :"+getStatus());
-    System.out.println("tipe :"+getKecepatan());
+    System.out.println(gettipe()+getmerk());
+    System.out.println("Kecepatan Mobil :"+getStatus());
 }
 public String getStatus(){
     return status;
@@ -70,9 +70,9 @@ public String gettipe(){
         System.out.println(mobilku.getStatus());
         mobilku.infoKecepatan();
         
-        mobilku.kurangKecepatan(100);
+        /*mobilku.kurangKecepatan(100);
         System.out.println(mobilku.getStatus());
-        mobilku.infoKecepatan();
+        mobilku.infoKecepatan();*/
     }
     
 }
