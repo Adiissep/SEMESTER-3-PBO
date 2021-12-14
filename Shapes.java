@@ -11,27 +11,22 @@ public class Shapes {
 
 abstract class Shape {
   String color;
-
   void setColor(String color) {
     this.color = color;
   }
-
   String getColor() {
     return this.color;
   }
-
   abstract float getArea(); 
 }
 
 class Triangle extends Shape {
   float base;
   float height;
-
   Triangle(float base, float height) {
     this.base = base;
     this.height = height;
   }
-
   @Override
   float getArea() {
     return 0.5f * base * height; 
@@ -41,11 +36,9 @@ class Triangle extends Shape {
 
 class Circle extends Shape {
   float radius;
-
   Circle(float radius) {
     this.radius = radius;
   }
-
   @Override
   float getArea() {
     return (float) Math.PI * radius * radius; 
